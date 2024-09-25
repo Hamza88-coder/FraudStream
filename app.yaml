@@ -1,0 +1,11 @@
+name: anomaly_detection
+language: Python
+variables:
+  - name: output
+    inputType: OutputTopic
+    description: Name of the output topic to write into
+    defaultValue: stocks
+    required: true
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: main.py
